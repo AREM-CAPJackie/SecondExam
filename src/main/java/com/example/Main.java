@@ -63,7 +63,7 @@ public class Main {
 
     @RequestMapping("/cuadrado")
     public ResponseEntity<?> cuadrado(@RequestParam("valor") int valor) {
-        return new ResponseEntity<>(new Cuadrado(valor)/*"{\"valor\":"+valor+", \"cuadrado\":"+valor*valor+"}"*/, HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(new Cuadrado(valor), HttpStatus.ACCEPTED);
     }
 
     @RequestMapping("/db")
