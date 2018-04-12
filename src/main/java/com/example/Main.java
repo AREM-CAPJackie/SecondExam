@@ -66,7 +66,7 @@ public class Main {
         //Map<String, Integer> respuesta = new HashMap<>();
         //respuesta.put("valor", valor);
         //respuesta.put("cuadrado", valor * valor);
-        return new ResponseEntity<>("{valor:"+valor+", cuadrado:"+valor*valor+"}", HttpStatus.ACCEPTED);
+        return new ResponseEntity<>("{\"valor\":"+valor+", \"cuadrado\":"+valor*valor+"}", HttpStatus.ACCEPTED);
     }
 
     @RequestMapping("/db")
