@@ -32,7 +32,6 @@ public class ClientThread extends Thread {
         }
 
     }
-
     private void printResult(String pathHeroku) throws MalformedURLException {
         URL result = new URL(urlHeroku+pathHeroku);
         try (BufferedReader reader = new BufferedReader(
